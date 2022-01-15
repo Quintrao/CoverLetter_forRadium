@@ -37,7 +37,8 @@ $('.menu input').on('click', (event) => {
 })
 
 
-    $('.name-and-position').on('click', function(){
+    $('.name-and-position').on('click', function(event){
+        event.preventDefault()
         if (longMode) { 
         $('.name').toggleClass('hide')
         $('.position').toggleClass('hide')    

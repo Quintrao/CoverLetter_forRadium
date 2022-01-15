@@ -18,7 +18,7 @@ main {
     font-size: 40px;
 }
 
-@media (width<600px) {
+@media (max-width<600px) {
         main h2 {
             font-size: 1rem;
         }
@@ -28,7 +28,7 @@ main {
         }
 
         .btn, .btn.up {
-            background-position: 70%;
+            background-position: 100%;
         }
 
 }
@@ -38,7 +38,7 @@ main {
     text-align: center;     
     /* border: 1px solid #a3a3a3;    */
     margin: 1em;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .name-and-position h2,
@@ -54,6 +54,12 @@ main {
     display: inline-block;
     margin: 0 auto;
     
+}
+
+
+.name-and-position p {
+    margin: 1.5em auto;
+    width: 60%;    
 }
 
 .name-and-position h2:hover,
