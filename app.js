@@ -30,7 +30,8 @@ $('.btn-return').on('click', (event) => {
 $('.menu input').on('click', (event) => {
     event.stopPropagation()
     longMode = !longMode
-    console.log(longMode)
+    $('.name').show().removeClass('hide')
+    $('.position').show().removeClass('hide')
 })
 
 
