@@ -7,6 +7,7 @@ $('body').keydown((event) => {
         $('.name').hide()
         $('.position').hide()
         $('.btn-return').removeAttr('disabled') 
+        // $('.menu input').attr('disabled', true)
     } 
 })
 
@@ -17,7 +18,7 @@ $('.btn').on('click', (event) => {
         } else {$('.btn').html("Развернуть")}
     $('.disclaimer').slideToggle(250)
     $('.menu').toggleClass('active')
-    $('.btn').toggleClass('up')
+    $('.btn').toggleClass('up') 
 })
 
 $('.btn-return').on('click', (event) => {
@@ -25,13 +26,14 @@ $('.btn-return').on('click', (event) => {
     $('.name').show().removeClass('hide')
     $('.position').show().removeClass('hide')
     $('.btn-return').attr('disabled', true)
+    // $('.menu input').removeAttr('disabled') 
 })
 
 $('.menu input').on('click', (event) => {
     event.stopPropagation()
     longMode = !longMode
-    $('.name').show().removeClass('hide')
-    $('.position').show().removeClass('hide')
+    $('.name').removeClass('hide')
+    $('.position').removeClass('hide')
 })
 
 
