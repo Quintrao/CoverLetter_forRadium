@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+    background-color: #eee;
+}
+
+main {
+    background-color: #fff;
+    width: 90vh;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #1d1d1d;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.name-and-position {
+    padding: 2rem 2rem;
+    text-align: center;     
+    /* border: 1px solid #a3a3a3;    */
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.name-and-position h2,
+.name-and-position p {
+    color: #a38b70;
+    transition: all 0.2s ease-in,
+                color 0.1s ease-in-out;
+}
+
+
+.name-and-position h2 {
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+
+.name-and-position h2:hover,
+.name-and-position p:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid #a3a3a3;
+    }
+
+.name-and-position h2:active,
+.name-and-position p:active {
+    color: #fff;
+    border-bottom: none;
+}
+
+main .name-and-position .hide {
+    color:white;
+    border-bottom: none;
+}
+
+
+.menu {
+    text-align: center;
+    flex: 1;
+    background-color: #eee;
+    color: #1d1d1d;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.menu.active {
+    background-color: white;
+    color: #1d1d1d;
+}
+
+.content {
+    text-align: left;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20px;    
+    align-items: center
+}
+
+.disclaimer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.disclaimer .content p {
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    background: url('img/show.png') whitesmoke no-repeat 60%;
+    border: 1px solid white;
+}
+
+.btn.up{
+    background: url('img/hide.png') whitesmoke no-repeat 60%;
+}
+
+
+.btn:hover{
+    border: 1px solid #1d1d1d;
+    cursor: pointer;
+}
+
+.btn-return {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 92);
+    border: none;
+    color: white;
+    
+}
+
+.btn-return:not([disabled]) {
+    cursor: pointer;
+}
+
+.btn-return:not([disabled]):hover{
+    opacity: 0.8; 
+}
+
+[disabled] {
+    opacity: 0.5;
+}

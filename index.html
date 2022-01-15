@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cover Letter</title>
+    <link rel="stylesheet" href="sliderStyle.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="name-and-position">
+        <h2 class="name">Роман Гамов</h2>
+        <p class="position">Junior Frontend Developer</p>
+      </div>
+      <div class="menu">
+        <button class="btn">Развернуть</button>
+        <div class="disclaimer">
+        <h3 class="menu-title">Дисклеймер</h3>
+        <div class="content">
+          <p>
+            В описании задания не было указано, должен ли
+            текст при нажатии мыши становиться невидимым длительно, или на период
+            нажатия. На всякий случай я подготовил оба варианта.<br> 
+            В настоящий момент он скрывается за счёт псевдокласса
+            active, но с помощью чекбокса ниже можно изменить его поведение: он
+            будет скрываться и отображаться по клику мыши.
+          </p>
+          <label class="switch"> 
+            <input type="checkbox">
+            <span class="slider round"></span>            
+          </label>
+        </div>
+        <div class="menu-footer">
+          <button class="btn-return" disabled>Вернуть текст</button>
+        </div>
+    </div>
+      </div>
+    </main>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
