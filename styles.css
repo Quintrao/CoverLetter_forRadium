@@ -26,6 +26,11 @@ main {
         main p {
             font-size: 0.5rem;
         }
+
+        .btn, .btn.up {
+            background-position: 70%;
+        }
+
 }
 
 .name-and-position {
